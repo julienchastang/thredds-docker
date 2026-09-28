@@ -4,6 +4,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [5.10] - 2026-XX-XX
+
+### Updated
+
+- Updated to TDS 5.10, Tomcat 11, and JDK 17.
+- Updated HDF5 to 1.14.6, zlib to 1.3.2, and netCDF-C to 4.10.1.
+- Updated the container runtime and permissions model to use the security and configurable UID/GID support provided by unidata/tomcat-docker.
+- Removed default Tomcat users and credentials; protected TDS functionality now requires site-specific user configuration.
+- Removed the bundled TDM service and configuration. TDM is maintained separately in the tdm-docker repository.
+- Removed legacy Docker Swarm support.
+- Moved Java Preferences storage beneath the persistent TDS content directory.
+- Added an option to skip native-library compilation for development builds.
+
 ## [5.9] - 2025-07-13
 ### Updated
 - 5.9 release of the Unidata TDS wrapped in a Docker container
